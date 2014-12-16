@@ -48,7 +48,7 @@ Functions:
 
 Caveats:
 
-- The functions accept either `int` or `float`.
+- These functions accept either `int` or `float`.
 
 ## Installation
 
