@@ -3,7 +3,7 @@
 namespace TypedPHP\Functions\NumberFunctions;
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -13,7 +13,7 @@ function absolute($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -23,7 +23,7 @@ function arcCosine($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -33,7 +33,7 @@ function arcSine($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -43,7 +43,7 @@ function arcTangent($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -53,7 +53,7 @@ function cosine($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -63,7 +63,7 @@ function exponent($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -73,7 +73,7 @@ function hyperbolicCosine($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -83,7 +83,7 @@ function hyperbolicSine($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -93,7 +93,7 @@ function hyperbolicTangent($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -103,7 +103,7 @@ function arcHyperbolicCosine($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -113,7 +113,7 @@ function arcHyperbolicSine($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -123,7 +123,7 @@ function arcHyperbolicTangent($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -133,7 +133,7 @@ function logarithm($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -143,7 +143,7 @@ function sine($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -153,7 +153,7 @@ function squareRoot($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -163,7 +163,7 @@ function tangent($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -173,7 +173,7 @@ function degrees($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -183,8 +183,8 @@ function radians($number)
 }
 
 /**
- * @param float|int $number
- * @param float|int $divisor
+ * @param int|float $number
+ * @param int|float $divisor
  *
  * @return float
  */
@@ -194,8 +194,8 @@ function modulus($number, $divisor)
 }
 
 /**
- * @param float|int $number
- * @param float|int $power
+ * @param int|float $number
+ * @param int|float $power
  *
  * @return float
  */
@@ -205,7 +205,7 @@ function power($number, $power)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
  * @return float
  */
@@ -215,28 +215,28 @@ function round($number)
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
- * @return float
+ * @return int
  */
 function ceiling($number)
 {
-    return (float) \ceil($number);
+    return (int) \ceil($number);
 }
 
 /**
- * @param float|int $number
+ * @param int|float $number
  *
- * @return float
+ * @return int
  */
 function floor($number)
 {
-    return (float) \floor($number);
+    return (int) \floor($number);
 }
 
 /**
- * @param int $min
- * @param int $max
+ * @param int|float $min
+ * @param int|float $max
  *
  * @return int
  */
@@ -246,11 +246,11 @@ function random($min, $max)
 }
 
 /**
- * @param $number
- * @param $min
- * @param $max
+ * @param int|float $number
+ * @param int|float $min
+ * @param int|float $max
  *
- * @return mixed
+ * @return int|float
  */
 function limit($number, $min, $max)
 {

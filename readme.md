@@ -8,15 +8,47 @@
 
 ## Example
 
-TODO
+```php
+use TypedPHP\Functions\NumberFunctions;
+
+NumberFunctions\absolute(-0.5); // 0.5
+NumberFunctions\power(2, 2); // 4.0
+NumberFunctions\ceiling(1.4); // 2
+NumberFunctions\random(5, 10); // 7
+NumberFunctions\limit(15, 5, 10); // 10
+```
 
 Functions:
 
-TODO
+- `absolute(int|float $number) → float`
+- `arcCosine(int|float $number) → float`
+- `arcSine(int|float $number) → float`
+- `arcTangent(int|float $number) → float`
+- `cosine(int|float $number) → float`
+- `exponent(int|float $number) → float`
+- `hyperbolicCosine(int|float $number) → float`
+- `hyperbolicSine(int|float $number) → float`
+- `hyperbolicTangent(int|float $number) → float`
+- `arcHyperbolicCosine(int|float $number) → float`
+- `arcHyperbolicSine(int|float $number) → float`
+- `arcHyperbolicTangent(int|float $number) → float`
+- `logarithm(int|float $number) → float`
+- `sine(int|float $number) → float`
+- `squareRoot(int|float $number) → float`
+- `tangent(int|float $number) → float`
+- `degrees(int|float $number) → float`
+- `radians(int|float $number) → float`
+- `modulus(int|float $number, int|float $divisor) → float`
+- `power(int|float $number, int|float $power) → float`
+- `round(int|float $number) → int`
+- `ceiling(int|float $number) → int`
+- `floor(int|float $number) → int`
+- `random(int|float $min, int|float $max) → int|float`
+- `limit(int|float $number, int|float $min, int|float $max) → int|float`
 
 Caveats:
 
-TODO
+- The functions accept either `int` or `float`.
 
 ## Installation
 
