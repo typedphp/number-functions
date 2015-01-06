@@ -27,19 +27,19 @@ class NumberFunctionTest extends Test
         $this->assertEquals(0.5, NumberFunctions\absolute(-0.5));
     }
 
-    public function testArcCosine()
+    public function testInverseCosine()
     {
-        $this->assertEquals(acos(0.5), NumberFunctions\arcCosine(0.5));
+        $this->assertEquals(acos(0.5), NumberFunctions\inverseCosine(0.5));
     }
 
-    public function testArcSine()
+    public function testInverseSine()
     {
-        $this->assertEquals(asin(0.5), NumberFunctions\arcSine(0.5));
+        $this->assertEquals(asin(0.5), NumberFunctions\inverseSine(0.5));
     }
 
-    public function testArcTangent()
+    public function testInverseTangent()
     {
-        $this->assertEquals(atan(0.5), NumberFunctions\arcTangent(0.5));
+        $this->assertEquals(atan(0.5), NumberFunctions\inverseTangent(0.5));
     }
 
     public function testHyperbolicCosine()
@@ -59,17 +59,17 @@ class NumberFunctionTest extends Test
 
     public function testInverseHyperbolicCosine()
     {
-        $this->assertEquals(acosh(1.5), NumberFunctions\arcHyperbolicCosine(1.5));
+        $this->assertEquals(acosh(1.5), NumberFunctions\inverseHyperbolicCosine(1.5));
     }
 
     public function testInverseHyperbolicSine()
     {
-        $this->assertEquals(asinh(0.5), NumberFunctions\arcHyperbolicSine(0.5));
+        $this->assertEquals(asinh(0.5), NumberFunctions\inverseHyperbolicSine(0.5));
     }
 
     public function testInverseHyperbolicTangent()
     {
-        $this->assertEquals(atanh(0.5), NumberFunctions\arcHyperbolicTangent(0.5));
+        $this->assertEquals(atanh(0.5), NumberFunctions\inverseHyperbolicTangent(0.5));
     }
 
     public function testLogarithm()

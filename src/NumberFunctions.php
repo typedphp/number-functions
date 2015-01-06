@@ -17,7 +17,7 @@ function absolute($number)
  *
  * @return float
  */
-function arcCosine($number)
+function inverseCosine($number)
 {
     return (float) \acos($number);
 }
@@ -27,7 +27,7 @@ function arcCosine($number)
  *
  * @return float
  */
-function arcSine($number)
+function inverseSine($number)
 {
     return (float) \asin($number);
 }
@@ -37,7 +37,7 @@ function arcSine($number)
  *
  * @return float
  */
-function arcTangent($number)
+function inverseTangent($number)
 {
     return (float) \atan($number);
 }
@@ -97,7 +97,7 @@ function hyperbolicTangent($number)
  *
  * @return float
  */
-function arcHyperbolicCosine($number)
+function inverseHyperbolicCosine($number)
 {
     return (float) \acosh($number);
 }
@@ -107,7 +107,7 @@ function arcHyperbolicCosine($number)
  *
  * @return float
  */
-function arcHyperbolicSine($number)
+function inverseHyperbolicSine($number)
 {
     return (float) \asinh($number);
 }
@@ -117,7 +117,7 @@ function arcHyperbolicSine($number)
  *
  * @return float
  */
-function arcHyperbolicTangent($number)
+function inverseHyperbolicTangent($number)
 {
     return (float) \atanh($number);
 }
@@ -217,21 +217,21 @@ function round($number)
 /**
  * @param int|float $number
  *
- * @return int
+ * @return float
  */
 function ceiling($number)
 {
-    return (int) \ceil($number);
+    return (float) \ceil($number);
 }
 
 /**
  * @param int|float $number
  *
- * @return int
+ * @return float
  */
 function floor($number)
 {
-    return (int) \floor($number);
+    return (float) \floor($number);
 }
 
 /**
